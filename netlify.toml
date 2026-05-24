@@ -1,0 +1,12 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+# Serve the app at the site root
+[[redirects]]
+  from = "/"
+  to = "/shelf-oracle-netlify.html"
+  status = 200
